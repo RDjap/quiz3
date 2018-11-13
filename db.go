@@ -120,7 +120,6 @@ func Delete(w http.ResponseWriter, r *http.Request) {
 func main() {
 	log.Println("Server started on: http://localhost:8080")
 	http.HandleFunc("/", Index)
-	http.HandleFunc("/show", Show)
 	http.HandleFunc("/new", New)
 	http.HandleFunc("/edit", Edit)
 	http.HandleFunc("/insert", Insert)
